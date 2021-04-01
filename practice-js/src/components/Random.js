@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Random() {
+function Random(props) {
     return (
         <div>
-            <h1>She remembers REACT!</h1>
+            <h1>{props.name} remembers REACT!</h1>
+            <p>{props.name} is going super slow brushing up on React.</p>
         </div>
     )
 }
