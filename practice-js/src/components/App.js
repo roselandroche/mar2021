@@ -1,6 +1,6 @@
+import { Route } from 'react-router-dom';
 import logo from '../logo.svg';
 import '../App.css';
-
 import Random from './Random';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Random name="Rose"/>
+      <Route exact path="/random" render={() => <Random />} />
     </div>
 
   );
