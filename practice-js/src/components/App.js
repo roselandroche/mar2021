@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Route exact path="/random" render={() => <Random />} />
+      <Route exact path="/random" render={() => <Random name={'Rose'} />} />
     </div>
 
   );
