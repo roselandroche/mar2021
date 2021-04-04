@@ -10,3 +10,4 @@ Added component with an API call via axios (Quote)<br>
 # remembering styled components
 Added styled components library<br>
 Used styled components (Quote)<br>
+Used styled components (Random)<br>
