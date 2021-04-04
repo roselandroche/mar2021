@@ -8,4 +8,5 @@ Added Routes and Links for ease of navigating<br>
 Added component with an API call via axios<br>
 
 # remembering styled components
-Added styled components
+Added styled components library
+Used styled components in Quote.js

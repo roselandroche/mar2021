@@ -4,18 +4,26 @@ import styled from 'styled-components';
 
 const QuoteText = styled.h2`
     width: 75%;
-    margin: 15% auto;
-    border: 2px solid gray;
+    margin: 0 auto;
+    border: 5px solid #fff;
     border-radius: 12px;
-    padding: 50px 20px;
+    padding: 100px 20px;
     font-size: 30px;
     line-height: 36px;
+    text-align: center;
 `;
 
 const QuoteAuthor = styled.h5`
     margin: 0 auto;
     width: 20%;
     font-size: 22px;
+    padding-top: 12px;
+    text-align: center;
+`;
+
+const QuotePage = styled.div`
+    background-color: #D9CCAA;
+    padding: 200px 100px;
 `;
 
 function Quote() {
@@ -31,10 +39,10 @@ function Quote() {
     }, [])
 
     return (
-        <div>
+        <QuotePage>
             <QuoteText>{quote}</QuoteText>
             <QuoteAuthor>{author}</QuoteAuthor>
-        </div>
+        </QuotePage>
     )
 }
 
