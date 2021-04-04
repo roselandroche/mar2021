@@ -27,7 +27,7 @@ const QuotePage = styled.div`
 `;
 
 function Quote() {
-    const [quote, setQuote] = useState("https://engineeredsys.com/wp-content/uploads/2019/08/download.png");
+    const [quote, setQuote] = useState("");
     const [author, setAuthor] = useState("");
 
     useEffect(() => {
@@ -35,6 +35,9 @@ function Quote() {
             .then((res) => {
                 setQuote(res.data.content);
                 setAuthor(res.data.author);
+            })
+            .catch((err) => {
+                console.log(err);
             })
     }, [])
 
