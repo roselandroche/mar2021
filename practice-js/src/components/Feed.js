@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
 
 function Feed() {
-    const [feedData, setFeedData] = useState([]);
+    const [feedData, setFeedData] = useState({
+        date: Date.now(),
+        post: ''
+    });
 
     function handleChange(event) {
-        setFeedData(...feedData, event.target.value);
+        setFeedData({
+            ...feedData,
+            [event.target.name]: event.target.value
+        });
     }
 
     function handleSubmit(event) {
         event.preventDefault();
         console.log('You hit submit');
-        setFeedData([
-            ...feedData,
-            event.target.value
-        ]);
-        // feedData.forEach(entry => console.log(entry));
-        console.log(feedData);
     }
 
     return (
         <div>
             <form className="feedData" onSubmit={ handleSubmit }>
                 <label>Tell Us What Happened!
-                    <input type="text" name="feedPost" value={ feedData.feedPost } onChange={ handleChange } placeholder="Spill tea here..." />
+                    <input type="text" name="post" value={ feedData.post } onChange={ handleChange } placeholder="Spill tea here..." />
                 </label>
                 <button type="submit">Submit</button>
             </form>
