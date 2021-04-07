@@ -2,11 +2,11 @@ import React from 'react'
 import AddToFeed from './AddToFeed';
 import FeedPost from './FeedPost';
 
-function DisplayFeed(props) {
+function DisplayFeed({feed, getFeed}) {
     return (
         <div>
-            <AddToFeed feed={props.feed} getFeed={ props.getFeed } />
-            <ul>{props.feed.map(post => <FeedPost key={post.date} name={ post.post } />)}</ul>
+            <AddToFeed feed={feed} getFeed={ getFeed } />
+            <ul>{ feed.map(post => <FeedPost key={post.date} name={ post.post } />) }</ul>
         </div>
     )
 }

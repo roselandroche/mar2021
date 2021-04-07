@@ -1,9 +1,9 @@
 import React from 'react'
 
-function FeedPost(props) {
+function FeedPost({ name }) {
     return (
         <div>
-            <li>{props.post}</li>
+            <li>{name}</li>
         </div>
     )
 }

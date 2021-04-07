@@ -21,7 +21,6 @@ function AddToFeed(props) {
     function handleSubmit(event) {
         event.preventDefault();
         addPost();
-        console.log('You hit submit');
     }
 
     return (
