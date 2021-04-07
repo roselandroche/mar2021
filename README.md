@@ -11,3 +11,7 @@ Added component with an API call via axios (Quote)<br>
 Added styled components library<br>
 Used styled components (Quote)<br>
 Used styled components (Random)<br>
+
+# working with forms
+Added 3 components to display feed like social media<br>
+Components take in user text input and display to screen<br>
