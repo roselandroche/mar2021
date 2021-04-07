@@ -6,7 +6,7 @@ function DisplayFeed({feed, getFeed}) {
     return (
         <div>
             <AddToFeed feed={feed} getFeed={ getFeed } />
-            <ul>{ feed.map(post => <FeedPost key={post.date} name={ post.post } />) }</ul>
+            <div>{ feed.map(post => <FeedPost key={post.date} name={ post.post } />) }</div>
         </div>
     )
 }

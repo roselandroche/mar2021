@@ -3,7 +3,7 @@ import React from 'react'
 function FeedPost({ name }) {
     return (
         <div>
-            <li>{name}</li>
+            <p>{name}</p>
         </div>
     )
 }
