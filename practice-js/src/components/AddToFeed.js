@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-function Feed() {
+function AddToFeed() {
     const [feedData, setFeedData] = useState({
         date: Date.now(),
-        post: ''
+        post: '',
     });
 
     function handleChange(event) {
@@ -16,6 +16,7 @@ function Feed() {
     function handleSubmit(event) {
         event.preventDefault();
         console.log('You hit submit');
+        console.log(feedData);
     }
 
     return (
@@ -30,4 +31,4 @@ function Feed() {
     )
 }
 
-export default Feed
+export default AddToFeed
