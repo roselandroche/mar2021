@@ -7,7 +7,7 @@ function AddToFeed(props) {
     });
 
     function addPost() {
-        setFeedData({...feedData, date: Date.now});
+        setFeedData({...feedData, date: Date.now()});
         props.getFeed([...props.feed, feedData]);
     }
 
