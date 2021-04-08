@@ -1,4 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+
+const FeedForm = styled.form`
+    width: 30%;
+    height: 200px;
+    margin: 36px auto;
+    padding: 0px 48px;
+    border: 2px solid purple;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+`;
 
 function AddToFeed(props) {
     const [feedData, setFeedData] = useState({
@@ -25,12 +38,11 @@ function AddToFeed(props) {
 
     return (
         <div>
-            <form className="feedData" onSubmit={ handleSubmit }>
-                <label>Tell Us What Happened!
-                    <input type="text" name="post" value={ feedData.post } onChange={ handleChange } placeholder="Spill tea here..." />
-                </label>
+            <FeedForm className="feedData" onSubmit={ handleSubmit }>
+                <label>Tell Us What Happened!</label>
+                <input type="text" name="post" value={ feedData.post } onChange={ handleChange } placeholder="Spill tea here..." />
                 <button type="submit">Submit</button>
-            </form>
+            </FeedForm>
         </div>
     )
 }

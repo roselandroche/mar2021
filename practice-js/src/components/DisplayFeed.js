@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import AddToFeed from './AddToFeed';
 import FeedPost from './FeedPost';
 
