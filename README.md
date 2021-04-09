@@ -16,3 +16,7 @@ Used styled components (Random)<br>
 Added 3 components to display feed like social media<br>
 Components take in user text input and display to screen<br>
 Styling Feed components<br>
+
+# making app more modular
+Moved nav into it's own component<br>
+Added styling<br>
