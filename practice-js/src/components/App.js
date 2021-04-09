@@ -1,7 +1,8 @@
 import { React, useState } from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import Home from './Home';
+import Nav from './Nav';
 import Random from './Random';
 import Quote from './Quote';
 import DisplayFeed from './DisplayFeed';
@@ -10,11 +11,7 @@ function App() {
   const [feed, getFeed] = useState([]);
   return (
     <div>
-      <Link to={'/'}>Home</Link>
-      <Link to={'/random'}>Random</Link>
-      <Link to={'/quote'}>Quote</Link>
-      <Link to={'/displayfeed'}>Display Feed</Link>
-      
+      <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/random" render={() => <Random name={'Rose'} />} />
